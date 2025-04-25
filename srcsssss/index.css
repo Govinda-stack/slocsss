@@ -1,0 +1,613 @@
+:root {
+  font-family: "Bai Jamjuree", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  --animate-duration: 800ms;
+  --animate-delay: 0.9s;
+}
+html {
+  scroll-behavior: smooth;
+}
+@media (min-width: 1500px) {
+  .container {
+    max-width: 1440px !important;
+  }
+
+}
+img.Move {
+  position: absolute;
+}
+main#All {
+  overflow-x: hidden;
+}
+body {
+  overflow-x: hidden;
+}
+
+a{
+  text-decoration: none !important;
+}
+.same-space{
+  padding: 80px 0 !important;
+}
+
+
+.dots {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background-color: #333;
+  border-radius: 50%;
+  opacity: 0;
+  transform: scale(0);
+}
+
+.cursor-down {
+  position: absolute;
+  bottom: 20px;
+  font-size: 40px;
+  color: #333;
+}
+
+.scroll-section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 1s ease-in-out;
+}
+.navbar-brand img {
+  width: 142px;
+}
+.circle-image {
+  width: 100px;
+  height: 100px;
+  background-color: #EFF7FE;
+  border-radius: 50%;
+  opacity: 0;
+  transform: scale(0.5);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  margin: 0 20px;
+}
+
+.rocket-image {
+  position: absolute;
+  top: 47px;
+  left: 138px;
+  transition: transform 0.3s ease;
+  z-index: +999999999999999999999999999999999999999;
+}
+
+
+
+.animated-logo {
+  position: relative;
+  width: 100%;
+}
+
+.image-wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.rocket-image.main-image {
+  width: 100%;
+  max-width: 300px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+.split-images {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  opacity: 0;
+  z-index: 1;
+}
+
+.split-image {
+  width: 100px;
+  height: auto;
+  transition: filter 0.3s ease;
+}
+
+.features-row {
+  position: relative;
+}
+
+.dip-column {
+  transition: background-color 0.3s ease;
+  position: relative;
+
+}
+
+.dipped {
+  filter: hue-rotate(90deg);
+}
+
+
+
+.Cta .banner-button {
+  transition: transform 0.3s ease-out;
+}
+
+.split-images img {
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.card {
+  transition: background-color 0.5s all ease;
+z-index: +9999;
+}
+
+img#rocket-image {
+  opacity: 0 !important;
+}
+/* Hide Testimonal imgs */
+.img-hide {
+  display: none;
+}
+
+.swiper-button-prev-custom,
+.swiper-button-next-custom {
+  cursor: pointer;
+
+}
+
+.custom-swiper-nav {
+  position: relative;
+  z-index: 10;
+}
+
+
+
+.featured-floating-imgs {
+  position: relative;
+}
+
+.image-stack {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 20px;
+  z-index: 9999;
+}
+
+.initial-image {
+  width: 100px;
+  height:100px;
+  object-fit: cover;
+}
+
+.box-container {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  gap: 50px;
+}
+
+.box-wrapper {
+  position: relative;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background: #ccc;
+}
+
+
+.bottom-image {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.initial-image {
+
+  object-fit: cover;
+  position: absolute;
+  left: -80px;
+  top: -58px;
+}
+img.Move {
+  left: -25px;
+}
+
+.swiper{
+  overflow: unset !important;
+}
+.image-stack-1 {
+  top: 100px !important;
+}
+
+
+
+.dots {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background-color: #333;
+  border-radius: 50%;
+  opacity: 0;
+  transform: scale(0);
+}
+
+.cursor-down {
+  position: absolute;
+  bottom: 20px;
+  font-size: 40px;
+  color: #333;
+}
+
+.scroll-section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 1s ease-in-out;
+}
+.navbar-brand img {
+  width: 142px;
+}
+.circle-image {
+  width: 100px;
+  height: 100px;
+  background-color: #EFF7FE;
+  border-radius: 50%;
+  opacity: 0;
+  transform: scale(0.5);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  margin: 0 20px;
+}
+
+.rocket-image {
+  position: absolute;
+  top: 47px;
+  left: 138px;
+  transition: transform 0.3s ease;
+  z-index: +9999999999999999;
+}
+
+
+
+.animated-logo {
+  position: relative;
+  width: 100%;
+}
+
+.image-wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.rocket-image.main-image {
+  width: 100%;
+  max-width: 300px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+.split-images {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  opacity: 0;
+  z-index: 1;
+}
+
+.split-image {
+  width: 100px;
+  height: auto;
+  transition: filter 0.3s ease;
+}
+
+.features-row {
+  position: relative;
+}
+
+.dip-column {
+  transition: background-color 0.3s ease;
+  position: relative;
+ 
+}
+
+.dipped {
+  filter: hue-rotate(90deg);
+}
+
+
+
+.Cta .banner-button {
+  transition: transform 0.3s ease-out;
+}
+
+.split-images img {
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.card {
+  transition: background-color 0.5s all ease;
+z-index: +9999;
+}
+
+img#rocket-image {
+  opacity: 0 !important;
+}
+
+.img-hide {
+  display: none;
+}
+
+.swiper-button-prev-custom,
+.swiper-button-next-custom {
+  cursor: pointer;
+
+}
+
+.custom-swiper-nav {
+  position: relative;
+  z-index: 10;
+}
+
+
+
+.featured-floating-imgs {
+  position: relative;
+}
+
+.image-stack {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 20px;
+}
+
+
+.box-container {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  gap: 50px;
+}
+
+.box-wrapper {
+  position: relative;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background: #ccc;
+}
+
+
+.bottom-image {
+  height: 50px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+.initial-image {
+  width: 50px;
+  height: auto;
+  position: absolute;
+   z-index: 1;
+}
+
+img.Move {
+  left: -25px;
+}
+
+svg.Move {
+  top: -150px;
+  left: -7px;
+}
+.image-stack img.initial-image {
+  transition: .2s all linear !important;
+}
+
+
+
+.timeline-container {
+  position: relative;
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.timeline-item {
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.timeline-dot {
+  position: absolute;
+  top: 0.4rem;
+  left: -1.1rem;
+  width: 1rem;
+  height: 1rem;
+  background-color: #6c757d;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.timeline-dot.active {
+  background-color: #000;
+}
+
+.year-display {
+  font-size: 2.5rem;
+  color: #dee2e6;
+  opacity: 0.7;
+}
+button.navbar-toggler {
+  border: none !important;
+  background: #064685;
+  border-radius: 0;
+  color: white;
+  padding: 8px;
+}
+.navbar-toggler-icon {
+
+  background-image:url(./assets//Imgs/Togle.svg) !important;
+  padding: 10px;
+}
+
+.timeline-container::-webkit-scrollbar {
+  display: none;
+  /* Hide scrollbar */
+}
+
+/* Hide scrollbar for Firefox */
+.timeline-container {
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+/* Hide scrollbar for Internet Explorer and Edge */
+.timeline-container {
+  -ms-overflow-style: none;
+  /* Internet Explorer and Edge */
+}
+
+/* Optional: If you want to ensure that the content is still scrollable */
+.timeline-container {
+  overflow: auto;
+  border-right: 1px solid #ccc;
+
+  /* Ensure the content can still be scrolled */
+}
+button.scroll-to-top-btn {
+  align-items: center;
+  align-content: center;
+  z-index: +9999999999999999999999999999999 !important;
+}
+.all-same-ani:hover {
+  background: #1F3B56 !important;
+  color: #fff !important;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 20px 40px 0px;
+  transform: scale(1.01) rotateX(5deg) rotateY(-5deg);
+}
+.all-same-ani{
+  position: relative !important;
+  transition: .3s all ease-in-out  !important;
+  overflow: hidden;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  perspective: 800px;
+}
+
+.custom-swiper-nav img {
+  transition: .3s all ease-in-out  !important;
+
+}
+.custom-swiper-nav img:hover {
+  scale: 1.05;
+}
+button.Up-arrow-btn.btn.btn-primary:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 20px 40px 0px;
+  transform: scale(1.01) rotateX(5deg) rotateY(-5deg);
+  background: #1F3B56 !important
+}
+button.Up-arrow-btn.btn.btn-primary:hover img {
+  transform: rotate(45deg)  !important;
+
+}
+button.Up-arrow-btn.btn.btn-primary img {
+  transition: .3s all ease-in-out  !important;
+
+}
+a.Up-arrow-btn.btn.btn-primary:hover{
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 20px 40px 0px;
+  transform: scale(1.01) rotateX(5deg) rotateY(-5deg);
+  background: #1F3B56 !important
+
+}
+a.Up-arrow-btn.all-same-ani.btn.btn-primary img {
+  transition: .3s all ease-in-out  !important;
+}
+a.Up-arrow-btn.all-same-ani.btn.btn-primary:hover img {
+  transform: rotate(45deg) !important;
+}
+button.scroll-to-top-btn:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 20px 40px 0px;
+  transform: scale(1.01) rotateX(5deg) rotateY(-5deg);
+  background: #1F3B56 !important;
+
+}
+a.Up-arrow-btn.btn.btn-primary img {
+  transition: .3s all ease-in-out  !important;
+}
+a.Up-arrow-btn.btn.btn-primary:hover img {
+  transform: rotate(45deg);
+}
+button.scroll-to-top-btn {
+  transition: .3s all ease-in-out  !important;
+}
+
+section.Cta {
+  z-index: +999999999999999999;
+}
+
+
+button.latest.filter.active.btn.btn-dark {
+  background: #1C85EB !important;
+  color: white !important;
+}
+.swiper.swiper-initialized.swiper-horizontal.swiper-backface-hidden .swiper-wrapper .swiper-slide .dip-column .custom-card {
+
+  height: 600px !important;
+}
+.custom-card {
+  height: 600px !important;
+}
